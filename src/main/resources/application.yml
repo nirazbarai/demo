@@ -1,0 +1,32 @@
+server:
+  servlet:
+    context-path: /api/v1/ev-cs
+  port: 8020
+spring:
+  application:
+    name: Demo-Cs
+  profiles:
+    active: local
+  datasource:
+    url: jdbc:postgresql://143.110.180.175:5432/ev_charging
+    jdbc-url: ${SPRING_DATASOURCE:jdbc:postgresql://143.110.180.175:5432}/${DEV_DB:ev_charging}
+    username: ${SPRING_DATASOURCE_USERNAME:devndsuser}
+    password: ${SPRING_DATASOURCE_PASSWORD:devndspass}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 60000
+      maximum-pool-size: 100
+      max-lifetime: 600000
+      minimum-idle: 20
+      validation-timeout: 3000
+      idle-timeout: 30000
+
+
+
+
+
+
+
+
+
+
