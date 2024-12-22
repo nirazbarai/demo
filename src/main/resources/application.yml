@@ -1,6 +1,4 @@
 server:
-  servlet:
-    context-path: /api/v1/ev-cs
   port: 8020
 spring:
   application:
