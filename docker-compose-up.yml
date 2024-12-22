@@ -5,7 +5,7 @@ services:
     build: .
     image: my-spring-app
     ports:
-      - "8080:8080"
+      - "8060:8060"
     environment:
       - SPRING_PROFILES_ACTIVE=application.yml
     volumes:
